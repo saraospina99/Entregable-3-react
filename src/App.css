@@ -1,0 +1,132 @@
+.App {
+  padding: 2em 1.5em;
+}
+
+.app__img {
+  margin-bottom: 2em;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  height: 1.8em;
+}
+
+.form__input {
+  width: 100%;
+  max-width: 200px;
+  padding-left: 1em;
+  font-family: inherit;
+  font-weight: 200;
+  border-radius: 5px 0 0 5px;
+}
+
+.form__btn {
+  width: 85px;
+  border-radius: 0 0.5em 0.5em 0;
+  background-color: #4ecd4c;
+  color: white;
+  font-weight: 200;
+  transition: font-weight 100ms ease, filter 100ms ease;
+  cursor: pointer;
+}
+
+.form__btn:hover {
+  background-color: #4ecd4cd2;
+  font-weight: 600;
+  font-family: inherit;
+}
+
+.form__list-container {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.form__list {
+  background-color: rosybrown;
+  max-height: 20em;
+  width: 17.5em;
+  margin-bottom: 3em;
+  margin-top: 0.5em;
+  overflow: hidden;
+  border-radius: 0 0 0.3em 0.3em;
+  font-weight: 300;
+}
+
+.form__list-item {
+  color: black;
+  width: 100%;
+  margin-bottom: 0.2rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.app__error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.8;
+  font-weight: 400;
+  margin-top: 2em;
+  gap: 0.5rem;
+}
+
+.x {
+  position: relative;
+  height: 2.8rem;
+  width: 2.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  animation: myAnim 2s ease 0s infinite normal forwards;
+}
+
+.x::before,
+.x::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #4ecd4c;
+}
+
+.x::before {
+  transform: rotate(45deg);
+  box-shadow: 0px 2px 9px 0px #04ff00c2;
+}
+
+.x::after {
+  transform: rotate(-45deg);
+  box-shadow: 0px 2px 9px 0px #4ecd4c;
+}
+
+.app__text {
+  color: white;
+  font-weight: 600;
+}
+
+@keyframes myAnim {
+	0%,
+	50%,
+	100% {
+		opacity: 1;
+	}
+
+	25%,
+	75% {
+		opacity: 0;
+	}
+}
+
+.residents__container {
+  display: flex;
+  gap: 2em;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+

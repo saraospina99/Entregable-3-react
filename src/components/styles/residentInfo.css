@@ -1,0 +1,78 @@
+.Resident {
+    border-radius: 0.5em;
+    background-color: white;
+    overflow: hidden;
+    max-width: 300px;
+}
+
+.resident__header {
+    position: relative;
+}
+
+.resident__container-status {
+    display: flex;
+    gap: 0.4em;
+    align-items: center;
+    position: absolute;
+    top: 1.5em;
+    width: 7em;
+    background-color: white;
+    padding: 0.3em 0 0.2em 0.4em;
+    border-radius: 0 0.3em 0.3em 0;
+}
+
+.resident__circle {
+    display: block;
+    width: 12px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: #aaa3;
+}
+
+.unknom {
+    background-color: rgb(170, 170, 170);
+}
+
+.Alive {
+    background-color: rgb(126, 218, 126);
+}
+
+.Dead {
+    background-color: rgb(250, 105, 105);
+}
+
+.resident__body {
+    padding: 1em 1.3em 1.8em;
+}
+
+.resident__name {
+    margin-bottom: 0.5em;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.resident__hr {
+    border: none;
+    border-top: 1px solid #4ecd4c;
+    margin-bottom: 0.5em;
+    box-shadow: 3px 3px 8px #4ecd4c9a;
+}
+
+.resident__list {
+    display: grid;
+    gap: 0.3em;
+}
+
+.resident__item {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.resident__label {
+    position: relative;
+    font-size: 1rem;
+    color:  #4ecd4c;
+    font-weight: 700;
+}

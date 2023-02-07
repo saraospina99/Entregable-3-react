@@ -1,0 +1,37 @@
+.Location {
+    background-color:  #4ecd4c;
+    box-shadow: 2px 2px 10px #4ecd4cda;
+    padding: 1em 1.5em 1.5em;
+    margin-bottom: 4em;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.5em;
+}
+
+.location__name {
+    color:  #1c2844;
+    text-align: center;
+    margin-bottom: 0.5em;
+    filter: brightness(1.1);
+}
+
+.location__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.location__item {
+    display: grid;
+    gap: 0.3em;
+    text-align: center;
+    font-weight: 300;
+    color: #1a110eb2;
+}
+
+.location__label {
+    font-weight: 500;
+    color: #1a110e;
+}
+
